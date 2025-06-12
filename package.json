@@ -16,5 +16,10 @@
     "url": "https://github.com/nkuv/rate-limiter-service/issues"
   },
   "homepage": "https://github.com/nkuv/rate-limiter-service#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "redis": "^5.5.6"
+  }
 }
