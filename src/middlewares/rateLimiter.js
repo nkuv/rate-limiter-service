@@ -9,8 +9,8 @@ const client = redis.createClient({
 });
 client.connect();
 
-const WINDOW = parseInt(process.env.RATE_LIMIT_WINDOW || '60');
-const MAX_REQ = parseInt(process.env.RATE_LIMIT_MAX || '100');
+const WINDOW = parseInt(process.env.RATE_LIMIT_WINDOW || '10');
+const MAX_REQ = parseInt(process.env.RATE_LIMIT_MAX || '5');
 
 module.exports = async function rateLimiter(req,res,next){
     try{
